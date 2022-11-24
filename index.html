@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/993859392b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/sm.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst / Statistician</p>
+                <h1>Hi, I'm <span>Samrat Dev</span><br>From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/m.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Samrat Kumar Dev Sharma. Now i am doing BSC in Statistics. 
+                        I love programing. I like to work with data. I have a some expertise
+                        on the data analyst field. I like work with missing value handling, some EDA and 
+                        data visualization and data preprocessing for ML. I continuously acquire knowledge
+                        and learning new technology. I love data and programing. I like also reading book.
+                        And I am a big supporter of Germany football team.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data Analyst</span><br>Cleaning, Preprocessing/Missing value handling</li>
+                                <li><span>Data Science</span><br>Cleaning, Preprocessing/Missing value handling</li>
+                                <li><span>Data visualization</span><br>Cleaning, Preprocessing/Missing value handling</li>
+                                <li><span>Business Analyst</span><br>Cleaning, Preprocessing/Missing value handling</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Data Analyst</span><br>AncovaBd</li>
+                                <li><span>Data Science</span><br>Flipkard</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BSC</span><br>Statistics</li>
+                                <li><span>MSC</span><br>Data Science</li>
+                                <li><span>Phd</span><br>Machine Learning</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------Services-------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Although many groups, organizations, and experts have different ways of approaching data analysis, most of them can be
+                    distilled into a one-size-fits-all definition. Data analysis is the process of cleaning, changing, and processing raw
+                    data and extracting actionable, relevant information that helps businesses make informed decisions. The procedure helps
+                    reduce the risks inherent in decision-making by providing useful insights and statistics, often presented in charts,
+                    images, tables, and graphs.
+                    
+                    A simple example of data analysis can be seen whenever we make a decision in our daily lives by evaluating what has
+                    happened in the past or what will happen if we make that decision. Basically, this is the process of analyzing the past
+                    or future and making a decision based on that analysis.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-gears"></i>
+                    <h2>Data Preprocessing</h2>
+                    <p>Data preprocessing is a step in the data mining and data analysis process that takes raw data and transforms it into a
+                    format that can be understood and analyzed by computers and machine learning.
+                    
+                    Raw, real-world data in the form of text, images, video, etc., is messy. Not only may it contain errors and
+                    inconsistencies, but it is often incomplete, and doesn’t have a regular, uniform design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
+                    <h2>Data visualization</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/1.jpg">
+                    <div class="layer">
+                        <h3>Market Analysis</h3>
+                        <p>This analysis showing some results continuous budget constraint</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/2.jpg">
+                    <div class="layer">
+                        <h3>Web Scraping</h3>
+                        <p>Web scraping means collecting data any website like static, dynamic and so on.</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/3.jpg">
+                    <div class="layer">
+                        <h3>ML</h3>
+                        <p>Machine learning one of the best way for future knowing.</p>
+                        <a href="#"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!---------------------------------CONTACT----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>samratdev151@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>01751341969</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/DevKumar1699"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.whatsapp.com/#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/samrat1699"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--Java Script-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSIz4B7jGIJ2P4MTiOJUg_LLEmq4s2p41XCWLpby-gZ-pwZGKQTPCHHa3keHELBMlw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+
+</html>
